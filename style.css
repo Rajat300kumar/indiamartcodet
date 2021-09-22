@@ -1,0 +1,82 @@
+
+
+#nav{
+	background-color: #2e3192;
+}
+.navbar-nav li:hover .dropdown-menu {
+    display: block;
+    width: 100%;
+}
+
+/* rotate caret on hover */
+.dropdown-menu > li > a:hover:after {
+    text-decoration: underline;
+    transform: rotate(-90deg);
+} 
+.dropdown-menu {
+   min-width: 20rem;
+	}
+.dropdown-toggle::after {
+    display: none;
+}
+#dash-sec-EB{
+	height: auto;
+    min-height: 310px;
+    max-height: fit-content;
+    padding: 0;
+    background-image: url('https://wallpapertag.com/wallpaper/full/9/8/5/880666-1280x1024-hd-wallpaper-1920x1080-for-android.jpg');
+    background-repeat: no-repeat;
+    
+
+}
+h2{
+	color: #2e3192;
+}
+.maintxt {
+    position: absolute;
+    top: 120%;
+    left: 6%;
+    bottom: 0%;
+ transform: translate(-12% ,60%); 
+ }
+.maintxt > img {
+     position: absolute;
+     z-index: -1;
+
+ }
+.bottom-right {
+  position: absolute;
+  bottom: 8px;
+  right: 16px;
+}
+.main{
+	display: flex;
+	flex-direction: row;
+
+}
+.leftimage{
+	width:100px;
+	height:100px;
+	margin-right:15px;
+	float: left;
+}
+a{
+	text-decoration: none;
+	color: #333;
+	/*font-weight: 500;*/
+}
+a:hover{
+	color: #333;
+	font-weight: 600;
+}
+div>span{
+	font-weight: 600;
+}
+#hover:hover{
+	 box-shadow: 0 6px 10px 0 rgba(0, 0, 0, .14), 0 1px 18px 0 rgba(0, 0, 0, .12), 0 3px 5px -1px rgba(0, 0, 0, .2)
+}
+#bo{
+  border-radius: 5px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+  transition: opacity 0.3s ease-in-out;
+}

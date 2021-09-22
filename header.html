@@ -1,0 +1,950 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://use.fontawesome.com/0e92a0e72f.js"></script>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css" integrity="sha384-jLKHWM3JRmfMU0A5x5AkjWkw/EYfGUAGagvnfryNV3F9VqM98XiIH7VBGVoxVSc7" crossorigin="anonymous">
+
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>IndiaMart</title>
+    
+    </style>
+
+  </head>
+  <body>
+    
+    <section>
+      <nav class="navbar navbar-expand-lg navbar-light text-light" id="nav">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">
+      <img src="https://help.indiamart.com/wp-content/uploads/2019/05/im-logo-512X512.png" alt="" width="30" height="24" class="d-inline-block align-text-top">
+      IndiaMart
+    </a>
+  
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <!-- <form class="d-flex">
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success" type="submit">Search</button>
+      </form> -->
+
+
+         <div class="col-lg-8 me-3">
+      <label class="sr-only" for="inlineFormInputGroup">Username</label>
+      <div class="input-group mb-2 ">
+        <div class="input-group-prepend">
+          <div class="input-group-text">All India </div>
+        </div>
+        <input type="text" class="form-control" id="inlineFormInputGroup" placeholder="Username">
+        <button type="button" class="btn btn-outline-success"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+  <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+</svg>search</button>
+      </div>
+    </div>
+
+
+      <!-- <ul class="navbar-nav me-0 mb-2 mb-lg-0">
+        <li class="nav-item"><button type="button" class="btn btn-light text-primary">Light</button></li>
+      </ul> -->
+
+         <!-- Button trigger modal -->
+<button type="button" class="btn btn-light text-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+  Search for price
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <div class="col-lg border-1" >
+      <p class="text-center"><a href="#" style="color:#2e3192 ;">Tell us what you need, and we’ll help you get quotes</a></p>
+      <div class="mb-3">
+  <label for="name" class="form-label"> I want to service</label>
+  <input type="email" class="form-control" id="name" placeholder="service/id">
+</div>
+      <div class="mb-3">
+  <label for="name" class="form-label"> Name</label>
+  <input type="email" class="form-control" id="name" placeholder="Name">
+</div>
+<div class="mb-3">
+  <label for="exampleFormControlTextarea1" class="form-label">Example textarea</label>
+  <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+</div>
+    </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+      
+      <ul class="navbar-nav mr-auto">
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle text-center text-light" href="#" id="navbarDropdown" role="button" aria-haspopup="true" aria-expanded="false">
+          <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" fill="currentColor" class="bi bi-shield-plus" viewBox="0 0 16 16">
+  <path d="M5.338 1.59a61.44 61.44 0 0 0-2.837.856.481.481 0 0 0-.328.39c-.554 4.157.726 7.19 2.253 9.188a10.725 10.725 0 0 0 2.287 2.233c.346.244.652.42.893.533.12.057.218.095.293.118a.55.55 0 0 0 .101.025.615.615 0 0 0 .1-.025c.076-.023.174-.061.294-.118.24-.113.547-.29.893-.533a10.726 10.726 0 0 0 2.287-2.233c1.527-1.997 2.807-5.031 2.253-9.188a.48.48 0 0 0-.328-.39c-.651-.213-1.75-.56-2.837-.855C9.552 1.29 8.531 1.067 8 1.067c-.53 0-1.552.223-2.662.524zM5.072.56C6.157.265 7.31 0 8 0s1.843.265 2.928.56c1.11.3 2.229.655 2.887.87a1.54 1.54 0 0 1 1.044 1.262c.596 4.477-.787 7.795-2.465 9.99a11.775 11.775 0 0 1-2.517 2.453 7.159 7.159 0 0 1-1.048.625c-.28.132-.581.24-.829.24s-.548-.108-.829-.24a7.158 7.158 0 0 1-1.048-.625 11.777 11.777 0 0 1-2.517-2.453C1.928 10.487.545 7.169 1.141 2.692A1.54 1.54 0 0 1 2.185 1.43 62.456 62.456 0 0 1 5.072.56z"/>
+  <path d="M8 4.5a.5.5 0 0 1 .5.5v1.5H10a.5.5 0 0 1 0 1H8.5V9a.5.5 0 0 1-1 0V7.5H6a.5.5 0 0 1 0-1h1.5V5a.5.5 0 0 1 .5-.5z"/>
+</svg><br>Doctor
+        </a>
+        <div class="dropdown-menu m-0" aria-labelledby="navbarDropdown">
+          <div class="row">
+            <div class="col-lg-6">
+              <a class="dropdown-item" href="#">Action</a>
+          <a class="dropdown-item" href="#">Another action</a>
+          <a class="dropdown-item" href="#">Action</a>
+          <a class="dropdown-item" href="#">Another action</a>
+          <a class="dropdown-item" href="#">Action</a>
+          <a class="dropdown-item" href="#">Another action</a>
+          <a class="dropdown-item" href="#">Action</a>
+          <a class="dropdown-item" href="#">Another action</a>
+            </div>
+            <div class="col-lg-6">
+              <a class="dropdown-item" href="#">Action</a>
+          <a class="dropdown-item" href="#">Another action</a>
+          <a class="dropdown-item" href="#">Action</a>
+          <a class="dropdown-item" href="#">Another action</a>
+          <a class="dropdown-item" href="#">Action</a>
+          <a class="dropdown-item" href="#">Another action</a>
+          <a class="dropdown-item" href="#">Action</a>
+          <a class="dropdown-item" href="#">Another action</a>
+            </div>
+          </div>
+          
+        </div>
+      </li>
+    
+      </ul>
+      <ul class="navbar-nav me-0 mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link text-center text-light" aria-current="page" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-house-door-fill" viewBox="0 0 16 16">
+  <path d="M6.5 14.5v-3.505c0-.245.25-.495.5-.495h2c.25 0 .5.25.5.5v3.5a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 .5-.5v-7a.5.5 0 0 0-.146-.354L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.354 1.146a.5.5 0 0 0-.708 0l-6 6A.5.5 0 0 0 1.5 7.5v7a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 .5-.5z"/>
+</svg><br>Sell</a>
+        </li>
+      </ul>
+      <ul class="navbar-nav mr-auto">
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle text-center text-light" href="#" id="navbarDropdown" role="button" aria-haspopup="true" aria-expanded="false">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-question-circle" viewBox="0 0 16 16">
+  <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+  <path d="M5.255 5.786a.237.237 0 0 0 .241.247h.825c.138 0 .248-.113.266-.25.09-.656.54-1.134 1.342-1.134.686 0 1.314.343 1.314 1.168 0 .635-.374.927-.965 1.371-.673.489-1.206 1.06-1.168 1.987l.003.217a.25.25 0 0 0 .25.246h.811a.25.25 0 0 0 .25-.25v-.105c0-.718.273-.927 1.01-1.486.609-.463 1.244-.977 1.244-2.056 0-1.511-1.276-2.241-2.673-2.241-1.267 0-2.655.59-2.75 2.286zm1.557 5.763c0 .533.425.927 1.01.927.609 0 1.028-.394 1.028-.927 0-.552-.42-.94-1.029-.94-.584 0-1.009.388-1.009.94z"/>
+</svg><br>Help
+        </a>
+        <div class="dropdown-menu m-0" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="#">Action</a>
+          <a class="dropdown-item" href="#">Another action</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="#">Something else here</a>
+        </div>
+      </li>
+    </ul>
+    
+
+      <ul class="navbar-nav mr-auto">
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle text-center text-light" href="#" id="navbarDropdown" role="button" aria-haspopup="true" aria-expanded="false">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person-circle" viewBox="0 0 16 16">
+  <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"/>
+  <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z"/>
+</svg>
+          <br>Hi
+        </a>
+        <div class="dropdown-menu m-0" aria-labelledby="navbarDropdown">
+           Mobile number<br>
+           <a href="">Home</a>
+        </div>
+      </li>
+    
+      </ul>
+
+    </div>
+  </div>
+</nav>
+    </section>
+
+    <section class="container-fluid" id="dash-sec-EB">
+      <div  class="container">
+        <div class="row">
+          <div class="col-lg-7 mt-3">
+            <div class="card">
+  <div class="card-body">
+    <h5 class="card-title text-center">Tell us what you Need</h5><hr>
+    <p class="card-text"><input class="form-control" type="text" placeholder="Enter product/Nmae" aria-label="default input example"></p>
+    <p class="card-text col-sm-6">
+      <input type="text" placeholder="Enter Name" class="form-control" id="inputPassword">
+    </p>
+    <p class="text-center"><a href="#" class="btn btn-success text-center">Submit Register</a></p><br>
+    
+  </div>
+</div>
+        </div>
+          <div class="col-lg-5 mt-3">
+            <div class="card">
+  <div class="card-body text-center">
+    <h5 class="card-title "> Strengthen Your Profile</h5><hr>
+    <p class="card-text">Welcome ,<br>
+Continue to update your business profile.</p>
+    <!-- <p class="text-center"><input type="text" name="Phone Number" pattern="[7-9]{1}[0-9]{9}" 
+       title="Phone number with 7-9 and remaing 9 digit with 0-9"><a href="#" class="btn btn-success text-center">Submit</a></p> -->
+       <div class="row g-3"><div class="col-auto">+91  -</div><span class="col-auto"><input maxlength="10" id="update-mobile-number" placeholder="Enter Molbile Number"><button name="Update"  type="submit" class="btn-outline-success" > Update →</button> </span></div>
+       <div class=row g-3><div class="col-auto mt-1"> <img src="https://my.imimg.com/gifs_new/spiral-trust-profile1.png" height="45" width="45"><br><span>Build<br> Trust Profile</span></div>
+       <div class="col-auto mt-1"> <img src="https://my.imimg.com/gifs_new/spiral-verification1.png" height="45" width="45"><br><span>Get Verification<br> Status</span></div>
+       <div class="col-auto mt-1"> <img src="https://my.imimg.com/gifs_new/spiral-preferential1.png" height="45" width="45"><br><span class="text-break">Enjoy <br>Preferential Selection</span><!-- <div class="fs-6">Preferred by sellers</div> --></div>
+     </div>
+  </div>
+</div>
+        </div>
+      </div>
+    </div>
+    </section>
+
+    <section>
+     <nav class="navbar navbar-expand-lg navbar-light">
+  <div class="container-fluid">
+   <ul class="navbar-nav mr-auto">
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle text-center" href="#" id="navbarDropdown" role="button" aria-haspopup="true" aria-expanded="false">
+          <svg xmlns="http://www.w3.org/2000/svg" width="45" height="45" fill="currentColor" class="bi bi-shield-slash" viewBox="0 0 16 16">
+  <path fill-rule="evenodd" d="M1.093 3.093c-.465 4.275.885 7.46 2.513 9.589a11.777 11.777 0 0 0 2.517 2.453c.386.273.744.482 1.048.625.28.132.581.24.829.24s.548-.108.829-.24a7.159 7.159 0 0 0 1.048-.625 11.32 11.32 0 0 0 1.733-1.525l-.745-.745a10.27 10.27 0 0 1-1.578 1.392c-.346.244-.652.42-.893.533-.12.057-.218.095-.293.118a.55.55 0 0 1-.101.025.615.615 0 0 1-.1-.025 2.348 2.348 0 0 1-.294-.118 6.141 6.141 0 0 1-.893-.533 10.725 10.725 0 0 1-2.287-2.233C3.053 10.228 1.879 7.594 2.06 4.06l-.967-.967zM3.98 1.98l-.852-.852A58.935 58.935 0 0 1 5.072.559C6.157.266 7.31 0 8 0s1.843.265 2.928.56c1.11.3 2.229.655 2.887.87a1.54 1.54 0 0 1 1.044 1.262c.483 3.626-.332 6.491-1.551 8.616l-.77-.77c1.042-1.915 1.72-4.469 1.29-7.702a.48.48 0 0 0-.33-.39c-.65-.213-1.75-.56-2.836-.855C9.552 1.29 8.531 1.067 8 1.067c-.53 0-1.552.223-2.662.524a49.7 49.7 0 0 0-1.357.39zm9.666 12.374-13-13 .708-.708 13 13-.707.707z"/>
+</svg>Drugs & Farma
+        </a>
+        </li>
+      </ul>
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle text-center" href="#" id="navbarDropdown" role="button" aria-haspopup="true" aria-expanded="false">
+          <i class="fa fa-3x fa-user-md"></i>Hospital &amp; Diagnostics</span>
+        </a>
+        <div class="dropdown-menu m-0" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="#">Action</a>
+          <a class="dropdown-item" href="#">Another action</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="#">Something else here</a>
+        </div>
+      </li>
+    </ul>
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle text-center" href="#" id="navbarDropdown" role="button" aria-haspopup="true" aria-expanded="false">
+          <i class="fa fa-3x fa-leaf"></i>Food &amp; Agriculture
+             </span>
+        </a>
+        <div class="dropdown-menu m-0" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="#">Action</a>
+          <a class="dropdown-item" href="#">Another action</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="#">Something else here</a>
+        </div>
+      </li>
+    </ul>
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle text-center" href="#" id="navbarDropdown" role="button" aria-haspopup="true" aria-expanded="false">
+          <i class="fa fa-3x fa-industry"></i><span>Industrial Machinery</span>
+        </a>
+        <div class="dropdown-menu m-0" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="#">Action</a>
+          <a class="dropdown-item" href="#">Another action</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="#">Something else here</a>
+        </div>
+      </li>
+    </ul>
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle text-center" href="#" id="navbarDropdown" role="button" aria-haspopup="true" aria-expanded="false">
+          <i class="fas fa-3x fa-gopuram"></i><span>Industrial Supplies</span>
+        </a>
+        <div class="dropdown-menu m-0" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="#">Action</a>
+          <a class="dropdown-item" href="#">Another action</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="#">Something else here</a>
+         </div>            
+      </li>
+    </ul>
+  </div>
+</nav>
+  
+    </section>
+
+
+<section>
+  <div class="container-fluid mt-3">
+    <div class="row border-top"  >
+    <h2 style="border-top: 3px solid #2e3192;"><a class="text-center text-dark" href="https://dir.indiamart.com/indianexporters/medical-clothing.html">Medical Essential, Safety &amp; Protective Clothing and Apparel</a></h2>
+    <div class="col-lg-4 ">
+      <img src="https://hm.imimg.com/imhome_gifs/bigBn01.jpg" alt="Medical, Safety &amp; Protective Clothing and Apparel" class="img-responsive" /> 
+                <div class="maintxt">
+                <ul>
+                     <li class="lh14"><a class="dshDib dshClr3 hovrTdU" href="https://dir.indiamart.com/impcat/disposable-gloves.html">Disposable Gloves</a></li>
+                       <li class="lh14"><a class="dshDib dshClr3 hovrTdU" href="https://dir.indiamart.com/impcat/hazmat-suit.html">Hazmat Suit</a></li>
+                       <li class="lh14"><a class="dshDib dshClr3 hovrTdU" href="https://dir.indiamart.com/impcat/ppe-kit.html">Personal Protective Equipment</a></li>
+                </ul>
+                <a href="https://dir.indiamart.com/indianexporters/medical-clothing.html" class="dshViewAll dshFs16 dshClr3 hovrTdU">View All</a>
+             </div>
+
+    </div>
+    <div class="col-lg-8 mt-3">
+      <div class="main">
+
+         <div class="row border border-1 m-2">
+           <div class="col-lg-5 float-left mt-5">
+         <img src="https://hm.imimg.com/imhome_gifs/cvid02.png" alt="image" class="leftimage">
+        
+           </div>
+           <div class="col-lg-7"> <span>Face Mask</span><br>
+         <a href="#">3 Ply Face Mask</a>
+         <br><a href="#">Disposable Face Mask</a><br>
+          <a href="#">N95 Respirator Mask</a><br>
+          <a href="#">Nose Masks</a><br>
+       </div>
+         </div>
+        
+      <div class="row border border-1 m-2">
+           <div class="col-lg-5 float-left mt-5">
+         <img src="https://3.imimg.com/data3/TH/GC/GLADMIN-56254/oxygen-cylinders-125x125.jpg" alt="image" class="leftimage">
+        
+           </div>
+           <div class="col-lg-7"> <span>Oxygen Cylinder</span><br>
+         <a href="#">Portable Oxygen Can</a>
+         <br><a href="#">Disposable Face Mask</a><br>
+          <a href="#">Empty Oxygen Cylinder</a><br>
+          <a href="#">Oxygen Concentrator</a><br>
+       </div>
+         </div>
+
+         <div class="row border border-1 m-2">
+           <div class="col-lg-5 float-left mt-5">
+         <img src="https://5.imimg.com/data5/GA/AX/PV/SELLER-134485/oxygen-mask-125x125.jpg" alt="image" class="leftimage">
+        
+           </div>
+           <div class="col-lg-7"> <span>Medical Masks</span><br>
+         <a href="#">CPR Mask</a>
+         <br><a href="#">Oxygen Mask</a><br>
+          <a href="#">CPAP Mask</a><br>
+          <a href="#">BIPAP Mask</a><br>
+       </div>
+         </div>
+
+      </div>
+      <div class="main">
+        <!-- <div class="row border border-1 m-2">
+           <div class="col-lg-5 float-left mt-5">
+         <img src="https://hm.imimg.com/imhome_gifs/cvid03.png" alt="image" class="leftimage">
+        
+           </div>
+           <div class="col-lg-7"> <span>Surgical Caps</span><br>
+         <a href="#">Bouffant Caps</a>
+         <br><a href="#">Nurse Cap</a><br>
+          <a href="#">Disposable Cap</a><br>
+       </div>
+         </div> --><div class="row border border-1 m-2">
+           <div class="col-lg-5 float-left mt-5">
+         <img src="https://hm.imimg.com/imhome_gifs/cvid03.png" alt="image" class="leftimage">
+        
+           </div>
+           <div class="col-lg-7"> <span>Personal Protective Equipment</span><br>
+         <a href="#">3 Ply Face Mask</a>
+         <br><a href="#">Disposable Face Mask</a><br>
+          <a href="#">N95 Respirator Mask</a><br>
+          <a href="#">Nose Masks</a><br>
+       </div>
+         </div>
+         <div class="row border border-1 m-2">
+           <div class="col-lg-5 float-left mt-5 ">
+         <img src="https://5.imimg.com/data5/FR/RK/MY-9882376/disposable-surgical-cap-125x125.jpg" alt="image" class="leftimage">
+        
+           </div>
+           <div class="col-lg-7"> <span>Personal Protective Equipment</span><br>
+         <a href="#">3 Ply Face Mask</a>
+         <br><a href="#">Disposable Face Mask</a><br>
+          <a href="#">N95 Respirator Mask</a><br>
+          <a href="#">Nose Masks</a><br>
+       </div>
+         </div>
+         <div class="row border border-1 m-2">
+           <div class="col-lg-5 float-left mt-5">
+         <img src="https://5.imimg.com/data5/SI/XQ/MB/GLADMIN-73621/coronavirus-ppe-kit-125x125.png" alt="image" class="leftimage">
+        
+           </div>
+           <div class="col-lg-7"> <span>Face Mask</span><br>
+         <a href="#">3 Ply Face Mask</a>
+         <br><a href="#">Disposable Face Mask</a><br>
+          <a href="#">N95 Respirator Mask</a><br>
+          <a href="#">Nose Masks</a><br>
+       </div>
+         </div>
+      </div>
+    </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="container-fluid mt-3">
+    <div class="row border-top"  >
+    <h2 style="border-top: 3px solid #2e3192;"><a class="text-center text-dark" href="https://dir.indiamart.com/indianexporters/medical-clothing.html">Hygiene, Personal Care and Cleaning Supplies</a></h2>
+    <div class="col-lg-4 ">
+      <img src="https://hm.imimg.com/imhome_gifs/bigBn02.jpg" alt="Medical, Safety &amp; Protective Clothing and Apparel" class="img-responsive" /> 
+                <div class="maintxt">
+                <ul>
+                     <li class="lh14"><a class="dshDib dshClr3 hovrTdU" href="https://dir.indiamart.com/impcat/disposable-gloves.html">Disposable Gloves</a></li>
+                       <li class="lh14"><a class="dshDib dshClr3 hovrTdU" href="https://dir.indiamart.com/impcat/hazmat-suit.html">Hazmat Suit</a></li>
+                       <li class="lh14"><a class="dshDib dshClr3 hovrTdU" href="https://dir.indiamart.com/impcat/ppe-kit.html">Personal Protective Equipment</a></li>
+                </ul>
+                <a href="https://dir.indiamart.com/indianexporters/medical-clothing.html" class="dshViewAll dshFs16 dshClr3 hovrTdU">View All</a>
+             </div>
+
+    </div>
+    <div class="col-lg-8 mt-3">
+      <div class="main">
+
+         <div class="row border border-1 m-2">
+           <div class="col-lg-5 float-left mt-5">
+         <img src="https://5.imimg.com/data5/LQ/TI/FF/GLADMIN-3061/purell-advanced-hand-sanitizer-125x125.jpg" title="Hand Sanitizer" class="leftimage">
+        
+           </div>
+           <div class="col-lg-7"> <span>Alcohol Based Hand Sanitizer</span><br>
+         <a href="#">Hand Sanitizer Spray</a>
+         <br><a href="#">Lifebuoy Hand Sanitizer</a><br>
+          <a href="#">3M Hand Sanitizer</a><br>
+          <a href="#">Dettol Hand Sanitizer</a><br>
+       </div>
+         </div>
+        
+      <div class="row border border-1 m-2">
+           <div class="col-lg-5 float-left mt-5">
+         <img src="https://5.imimg.com/data5/XG/DF/MY-2045391/tissue-papers-and-roles-125x125.jpg" alt="image" class="leftimage">
+        
+           </div>
+           <div class="col-lg-7"> <span>Tissue Paper</span><br>
+         <a href="#">Toilet Paper Roll</a>
+         <br><a href="#">Tissue Jumbo Roll</a><br>
+          <a href="#">Cotton Towel</a><br>
+          <a href="#">Tissue Napkin</a><br>
+          <a href="#">Wet Wipes</a><br>
+       </div>
+         </div>
+
+         <div class="row border border-1 m-2">
+           <div class="col-lg-5 float-left mt-5">
+         <img src="https://5.imimg.com/data5/SR/TL/MY-4313393/hand-wash-liquid-soaps-125x125.jpg" alt="Hand Soap" class="leftimage">
+        
+           </div>
+           <div class="col-lg-7"> <span>Liquid Hand Wash</span><br>
+         <a href="#"> Lifebuoy Hand Wash</a>
+         <br><a href="#">Hand Washing Gels</a><br>
+          <a href="#">Antibacterial Hand Wash</a><br>
+          <a href="#">Paper Soap</a><br>
+       </div>
+         </div>
+
+      </div>
+      <div class="main">
+        <!-- <div class="row border border-1 m-2">
+           <div class="col-lg-5 float-left mt-5">
+         <img src="https://hm.imimg.com/imhome_gifs/cvid03.png" alt="image" class="leftimage">
+        
+           </div>
+           <div class="col-lg-7"> <span>Surgical Caps</span><br>
+         <a href="#">Bouffant Caps</a>
+         <br><a href="#">Nurse Cap</a><br>
+          <a href="#">Disposable Cap</a><br>
+       </div>
+         </div> -->
+         <div class="row border border-1 m-2">
+           <div class="col-lg-5 float-left mt-5 ">
+         <img src="https://4.imimg.com/data4/CS/VF/MY-4373725/garbage-bags-125x125.jpg" alt="Garbage Bags" class="leftimage">
+        
+           </div>
+           <div class="col-lg-7"> <span>Garbage Bags</span><br>
+         <a href="#">3 Ply Face Mask</a>
+         <br><a href="#">Disposable Face Mask</a><br>
+          <a href="#">N95 Respirator Mask</a><br>
+          <a href="#">Nose Masks</a><br>
+       </div>
+         </div>
+         <div class="row border border-1 m-2">
+           <div class="col-lg-5 float-left mt-5">
+         <img src="https://hm.imimg.com/imhome_gifs/cvid05.png" alt="Cleaning Liquids &amp; Wipes" class="leftimage">
+        
+           </div>
+           <div class="col-lg-7"> <span>Face Mask</span><br>
+         <a href="#">3 Ply Face Mask</a>
+         <br><a href="#">Disposable Face Mask</a><br>
+          <a href="#">N95 Respirator Mask</a><br>
+          <a href="#">Nose Masks</a><br>
+       </div>
+         </div>
+         <div class="row border border-1 m-2">
+           <div class="col-lg-5 float-left mt-5 ">
+         <img src="https://4.imimg.com/data4/CS/VF/MY-4373725/garbage-bags-125x125.jpg" alt="Garbage Bags" class="leftimage">
+        
+           </div>
+           <div class="col-lg-7"> <span>Garbage Bags</span><br>
+         <a href="#">3 Ply Face Mask</a>
+         <br><a href="#">Disposable Face Mask</a><br>
+          <a href="#">N95 Respirator Mask</a><br>
+          <a href="#">Nose Masks</a><br>
+       </div>
+         </div>
+      </div>
+    </div>
+    </div>
+  </div>
+</section>
+ 
+ <section>
+  <div class="container-fluid mt-3">
+    <div class="row border-top"  >
+    <h2 style="border-top: 3px solid #2e3192;"><a class="text-center text-dark" href="https://dir.indiamart.com/indianexporters/medical-clothing.html">Medical Essential, Safety &amp; Protective Clothing and Apparel</a></h2>
+    <div class="col-lg-4 ">
+      <img src="https://hm.imimg.com/imhome_gifs/bigBn01.jpg" alt="Medical, Safety &amp; Protective Clothing and Apparel" class="img-responsive" /> 
+                <div class="maintxt">
+                <ul>
+                     <li class="lh14"><a class="dshDib dshClr3 hovrTdU" href="https://dir.indiamart.com/impcat/disposable-gloves.html">Disposable Gloves</a></li>
+                       <li class="lh14"><a class="dshDib dshClr3 hovrTdU" href="https://dir.indiamart.com/impcat/hazmat-suit.html">Hazmat Suit</a></li>
+                       <li class="lh14"><a class="dshDib dshClr3 hovrTdU" href="https://dir.indiamart.com/impcat/ppe-kit.html">Personal Protective Equipment</a></li>
+                </ul>
+                <a href="https://dir.indiamart.com/indianexporters/medical-clothing.html" class="dshViewAll dshFs16 dshClr3 hovrTdU">View All</a>
+             </div>
+
+    </div>
+    <div class="col-lg-8 mt-3">
+      <div class="main">
+
+         <div class="row border border-1 m-2">
+           <div class="col-lg-5 float-left mt-5">
+         <img src="https://hm.imimg.com/imhome_gifs/cvid02.png" alt="image" class="leftimage">
+        
+           </div>
+           <div class="col-lg-7"> <span>Face Mask</span><br>
+         <a href="#">3 Ply Face Mask</a>
+         <br><a href="#">Disposable Face Mask</a><br>
+          <a href="#">N95 Respirator Mask</a><br>
+          <a href="#">Nose Masks</a><br>
+       </div>
+         </div>
+        
+      <div class="row border border-1 m-2">
+           <div class="col-lg-5 float-left mt-5">
+         <img src="https://3.imimg.com/data3/TH/GC/GLADMIN-56254/oxygen-cylinders-125x125.jpg" alt="image" class="leftimage">
+        
+           </div>
+           <div class="col-lg-7"> <span>Oxygen Cylinder</span><br>
+         <a href="#">Portable Oxygen Can</a>
+         <br><a href="#">Disposable Face Mask</a><br>
+          <a href="#">Empty Oxygen Cylinder</a><br>
+          <a href="#">Oxygen Concentrator</a><br>
+       </div>
+         </div>
+
+         <div class="row border border-1 m-2">
+           <div class="col-lg-5 float-left mt-5">
+         <img src="https://5.imimg.com/data5/GA/AX/PV/SELLER-134485/oxygen-mask-125x125.jpg" alt="image" class="leftimage">
+        
+           </div>
+           <div class="col-lg-7"> <span>Medical Masks</span><br>
+         <a href="#">CPR Mask</a>
+         <br><a href="#">Oxygen Mask</a><br>
+          <a href="#">CPAP Mask</a><br>
+          <a href="#">BIPAP Mask</a><br>
+       </div>
+         </div>
+
+      </div>
+      <div class="main">
+        <!-- <div class="row border border-1 m-2">
+           <div class="col-lg-5 float-left mt-5">
+         <img src="https://hm.imimg.com/imhome_gifs/cvid03.png" alt="image" class="leftimage">
+        
+           </div>
+           <div class="col-lg-7"> <span>Surgical Caps</span><br>
+         <a href="#">Bouffant Caps</a>
+         <br><a href="#">Nurse Cap</a><br>
+          <a href="#">Disposable Cap</a><br>
+       </div>
+         </div> --><div class="row border border-1 m-2">
+           <div class="col-lg-5 float-left mt-5">
+         <img src="https://hm.imimg.com/imhome_gifs/cvid03.png" alt="image" class="leftimage">
+        
+           </div>
+           <div class="col-lg-7"> <span>Personal Protective Equipment</span><br>
+         <a href="#">3 Ply Face Mask</a>
+         <br><a href="#">Disposable Face Mask</a><br>
+          <a href="#">N95 Respirator Mask</a><br>
+          <a href="#">Nose Masks</a><br>
+       </div>
+         </div>
+         <div class="row border border-1 m-2">
+           <div class="col-lg-5 float-left mt-5 ">
+         <img src="https://5.imimg.com/data5/FR/RK/MY-9882376/disposable-surgical-cap-125x125.jpg" alt="image" class="leftimage">
+        
+           </div>
+           <div class="col-lg-7"> <span>Personal Protective Equipment</span><br>
+         <a href="#">3 Ply Face Mask</a>
+         <br><a href="#">Disposable Face Mask</a><br>
+          <a href="#">N95 Respirator Mask</a><br>
+          <a href="#">Nose Masks</a><br>
+       </div>
+         </div>
+         <div class="row border border-1 m-2">
+           <div class="col-lg-5 float-left mt-5">
+         <img src="https://5.imimg.com/data5/SI/XQ/MB/GLADMIN-73621/coronavirus-ppe-kit-125x125.png" alt="image" class="leftimage">
+        
+           </div>
+           <div class="col-lg-7"> <span>Face Mask</span><br>
+         <a href="#">3 Ply Face Mask</a>
+         <br><a href="#">Disposable Face Mask</a><br>
+          <a href="#">N95 Respirator Mask</a><br>
+          <a href="#">Nose Masks</a><br>
+       </div>
+         </div>
+      </div>
+    </div>
+    </div>
+  </div>
+</section>
+
+
+<section>
+  <div class="container-fluid mt-3">
+    <div class="row border-top"  >
+    <h2 style="border-top: 3px solid #2e3192;"><a class="text-center text-dark" href="https://dir.indiamart.com/indianexporters/medical-clothing.html">Hygiene, Personal Care and Cleaning Supplies</a></h2>
+    <div class="col-lg-4 ">
+      <img src="https://hm.imimg.com/imhome_gifs/bigBn02.jpg" alt="Medical, Safety &amp; Protective Clothing and Apparel" class="img-responsive" /> 
+                <div class="maintxt">
+                <ul>
+                     <li class="lh14"><a class="dshDib dshClr3 hovrTdU" href="https://dir.indiamart.com/impcat/disposable-gloves.html">Disposable Gloves</a></li>
+                       <li class="lh14"><a class="dshDib dshClr3 hovrTdU" href="https://dir.indiamart.com/impcat/hazmat-suit.html">Hazmat Suit</a></li>
+                       <li class="lh14"><a class="dshDib dshClr3 hovrTdU" href="https://dir.indiamart.com/impcat/ppe-kit.html">Personal Protective Equipment</a></li>
+                </ul>
+                <a href="https://dir.indiamart.com/indianexporters/medical-clothing.html" class="dshViewAll dshFs16 dshClr3 hovrTdU">View All</a>
+             </div>
+
+    </div>
+    <div class="col-lg-8 mt-3">
+      <div class="main">
+
+         <div class="row border border-1 m-2">
+           <div class="col-lg-5 float-left mt-5">
+         <img src="https://5.imimg.com/data5/LQ/TI/FF/GLADMIN-3061/purell-advanced-hand-sanitizer-125x125.jpg" title="Hand Sanitizer" class="leftimage">
+        
+           </div>
+           <div class="col-lg-7"> <span>Alcohol Based Hand Sanitizer</span><br>
+         <a href="#">Hand Sanitizer Spray</a>
+         <br><a href="#">Lifebuoy Hand Sanitizer</a><br>
+          <a href="#">3M Hand Sanitizer</a><br>
+          <a href="#">Dettol Hand Sanitizer</a><br>
+       </div>
+         </div>
+        
+      <div class="row border border-1 m-2">
+           <div class="col-lg-5 float-left mt-5">
+         <img src="https://5.imimg.com/data5/XG/DF/MY-2045391/tissue-papers-and-roles-125x125.jpg" alt="image" class="leftimage">
+        
+           </div>
+           <div class="col-lg-7"> <span>Tissue Paper</span><br>
+         <a href="#">Toilet Paper Roll</a>
+         <br><a href="#">Tissue Jumbo Roll</a><br>
+          <a href="#">Cotton Towel</a><br>
+          <a href="#">Tissue Napkin</a><br>
+          <a href="#">Wet Wipes</a><br>
+       </div>
+         </div>
+
+         <div class="row border border-1 m-2">
+           <div class="col-lg-5 float-left mt-5">
+         <img src="https://5.imimg.com/data5/SR/TL/MY-4313393/hand-wash-liquid-soaps-125x125.jpg" alt="Hand Soap" class="leftimage">
+        
+           </div>
+           <div class="col-lg-7"> <span>Liquid Hand Wash</span><br>
+         <a href="#"> Lifebuoy Hand Wash</a>
+         <br><a href="#">Hand Washing Gels</a><br>
+          <a href="#">Antibacterial Hand Wash</a><br>
+          <a href="#">Paper Soap</a><br>
+       </div>
+         </div>
+
+      </div>
+      <div class="main">
+        <!-- <div class="row border border-1 m-2">
+           <div class="col-lg-5 float-left mt-5">
+         <img src="https://hm.imimg.com/imhome_gifs/cvid03.png" alt="image" class="leftimage">
+        
+           </div>
+           <div class="col-lg-7"> <span>Surgical Caps</span><br>
+         <a href="#">Bouffant Caps</a>
+         <br><a href="#">Nurse Cap</a><br>
+          <a href="#">Disposable Cap</a><br>
+       </div>
+         </div> -->
+         <div class="row border border-1 m-2">
+           <div class="col-lg-5 float-left mt-5 ">
+         <img src="https://4.imimg.com/data4/CS/VF/MY-4373725/garbage-bags-125x125.jpg" alt="Garbage Bags" class="leftimage">
+        
+           </div>
+           <div class="col-lg-7"> <span>Garbage Bags</span><br>
+         <a href="#">3 Ply Face Mask</a>
+         <br><a href="#">Disposable Face Mask</a><br>
+          <a href="#">N95 Respirator Mask</a><br>
+          <a href="#">Nose Masks</a><br>
+       </div>
+         </div>
+         <div class="row border border-1 m-2">
+           <div class="col-lg-5 float-left mt-5">
+         <img src="https://hm.imimg.com/imhome_gifs/cvid05.png" alt="Cleaning Liquids &amp; Wipes" class="leftimage">
+        
+           </div>
+           <div class="col-lg-7"> <span>Face Mask</span><br>
+         <a href="#">3 Ply Face Mask</a>
+         <br><a href="#">Disposable Face Mask</a><br>
+          <a href="#">N95 Respirator Mask</a><br>
+          <a href="#">Nose Masks</a><br>
+       </div>
+         </div>
+         <div class="row border border-1 m-2">
+           <div class="col-lg-5 float-left mt-5 ">
+         <img src="https://4.imimg.com/data4/CS/VF/MY-4373725/garbage-bags-125x125.jpg" alt="Garbage Bags" class="leftimage">
+        
+           </div>
+           <div class="col-lg-7"> <span>Garbage Bags</span><br>
+         <a href="#">3 Ply Face Mask</a>
+         <br><a href="#">Disposable Face Mask</a><br>
+          <a href="#">N95 Respirator Mask</a><br>
+          <a href="#">Nose Masks</a><br>
+       </div>
+         </div>
+      </div>
+    </div>
+    </div>
+  </div>
+</section>
+ 
+
+<section>
+  <div class="container-fluid mt-5">
+    <h2><a href="#">Explore related products from Premium Brands</a></h2>
+    <div class="card">
+    <div class="col-lg-12">
+        <div  class="row">
+         <div class="col-lg-2  col-sm-offset-4 mr p-2 border" id="hover" >
+           <img src="https://seeklogo.com/images/1/3M-logo-079FB52BC8-seeklogo.com.png" width="100%" height="100%">
+      </div>
+      <div class="col-lg-2  col-sm-offset-4 mr p-2 border" id="hover" >
+              <img  class="image" src="https://logos-world.net/wp-content/uploads/2020/11/Shell-Logo.png" width="100%" height="100%">
+      </div>
+      <div class="col-lg-2  col-sm-offset-4 mr p-2 border" id="hover" >
+              <img  class="image" src="https://www.hul.co.in/Images/HUL-logo-990x557_tcm1255-558746_w700.jpg" width="100%" height="100%">
+      </div>
+      <div class="col-lg-2  col-sm-offset-4 mr p-2 border" id="hover" >
+              <img  class="image" src="https://1000logos.net/wp-content/uploads/2017/05/Philips-logo.jpg" width="100%" height="100%">
+      </div>
+      <div class="col-lg-2  col-sm-offset-4 mr p-2 border" id="hover" >
+              <img  class="image" src="https://www.logosurfer.com/wp-content/uploads/2018/03/Jindal20Steel202620Power20Logo.jpg" width="100%" height="100%">
+      </div>
+      <div class="col-lg-2  col-sm-offset-4 mr p-2 border" id="hover" >
+              <img  class="image" src="https://smsteelmart.com/wp-content/uploads/2017/08/tata_tiscon.jpg" width="100%" height="100%">
+      </div>
+      <div class="col-lg-2  col-sm-offset-4 mr p-2 border" id="hover" >
+              <img  class="image" src="https://www.hul.co.in/Images/HUL-logo-990x557_tcm1255-558746_w700.jpg" width="100%" height="100%">
+      </div>
+      <div class="col-lg-2  col-sm-offset-4 mr p-2 border" id="hover" >
+              <img  class="image" src="https://www.hul.co.in/Images/HUL-logo-990x557_tcm1255-558746_w700.jpg" width="100%" height="100%">
+      </div>
+       <div class="col-lg-2  col-sm-offset-4 mr p-2 border" id="hover" >
+              <img  class="image" src="https://logos-world.net/wp-content/uploads/2020/11/Shell-Logo.png" width="100%" height="100%">
+      </div>
+      <div class="col-lg-2  col-sm-offset-4 mr p-2 border" id="hover" >
+              <img  class="image" src="https://www.hul.co.in/Images/HUL-logo-990x557_tcm1255-558746_w700.jpg" width="100%" height="100%">
+      </div>
+      <div class="col-lg-2  col-sm-offset-4 mr p-2 border" id="hover" >
+              <img  class="image" src="https://1000logos.net/wp-content/uploads/2017/05/Philips-logo.jpg" width="100%" height="100%">
+      </div>
+      </div>
+    </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="container-fluid mt-3">
+    <h2><a href="#">More for you</a></h2>
+    <div class="row">
+    <div class="col-lg-3">
+      <div class="border text-center">
+        <i class="fa fa-3x fa-thumbs-up"></i><br><br>
+        <p class="text-center">Connect with verified sellers</p>
+        <span>Tell us your requirement & let our experts find verified sellers for you</span><br>
+        <button type="button" class="btn btn-outline-primary">Primary</button>
+      </div>
+    </div>
+    <div class="col-lg-3">
+      <div class="border text-center">
+        <i class="fa fa-3x fa-rupee-sign"></i><br><br>
+        <p class="text-center">Pay with IndiaMART</p>
+        <span>Protect your payments for FREE.
+Pay sellers online via multiple options.</span><br>
+        <button type="button" class="btn btn-outline-primary">Know More</button>
+      </div>
+    </div>
+    <div class="col-lg-3">
+      <div class="border text-center">
+        <svg xmlns="http://www.w3.org/2000/svg" width="45" height="45" fill="currentColor" class="bi bi-house" viewBox="0 0 16 16">
+  <path fill-rule="evenodd" d="M2 13.5V7h1v6.5a.5.5 0 0 0 .5.5h9a.5.5 0 0 0 .5-.5V7h1v6.5a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 2 13.5zm11-11V6l-2-2V2.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5z"/>
+  <path fill-rule="evenodd" d="M7.293 1.5a1 1 0 0 1 1.414 0l6.647 6.646a.5.5 0 0 1-.708.708L8 2.207 1.354 8.854a.5.5 0 1 1-.708-.708L7.293 1.5z"/>
+</svg><br><br>
+        <p class="text-center">Sell on IndiaMART for free</p>
+        <span>Reach out to more than 4 crore buyers.
+Sell with us.</span><br>
+        <button type="button" class="btn btn-outline-primary">Start Selling</button>
+      </div>
+    </div>
+    <div class="col-lg-3">
+      <div class="border text-center">
+        <svg xmlns="http://www.w3.org/2000/svg" width="45" height="45" fill="currentColor" class="bi bi-phone" viewBox="0 0 16 16">
+  <path d="M11 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h6zM5 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H5z"/>
+  <path d="M8 14a1 1 0 1 0 0-2 1 1 0 0 0 0 2z"/>
+</svg><br><br>
+        <p class="text-center">Download our App</p>
+        <span>Get instant notifications on the go. Download our App Now</span><br>
+        <button type="button" class="btn btn-outline-primary">Download Now</button>
+      </div>
+    </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="container mt-3 " id="bo">
+    <div class="col-lg-7 border-1" >
+      <p class="text-center"><a href="#" style="color:#2e3192 ;">Tell us what you need, and we’ll help you get quotes</a></p>
+      <div class="mb-3">
+  <label for="name" class="form-label"> I want to service</label>
+  <input type="email" class="form-control" id="name" placeholder="service/id">
+</div>
+      <div class="mb-3">
+  <label for="name" class="form-label"> Name</label>
+  <input type="email" class="form-control" id="name" placeholder="Name">
+</div>
+<div class="mb-3">
+  <label for="exampleFormControlTextarea1" class="form-label">Example textarea</label>
+  <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+</div>
+    </div>
+  </div><hr>
+</section>
+
+<section>
+  <!-- <div class="container-fluid">
+    <div class="row">
+      <div class="col float-stat">We are hear to help you</div>
+    <div class="col float-end">We are hear</div>
+    </div>
+  </div> -->
+  <div class="container">
+  <footer class="py-5">
+    <div class="d-flex justify-content-between py-4 my-4 border-top">
+      <p>© 2021 Company, Inc. All rights reserved.</p>
+      <ul class="list-unstyled d-flex">
+        <li class="ms-3"><a class="link-dark" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#twitter"></use></svg></a></li>
+        <li class="ms-3"><a class="link-dark" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#instagram"></use></svg></a></li>
+        <li class="ms-3"><a class="link-dark" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#facebook"></use></svg></a></li>
+      </ul>
+    </div>
+    <div class="row">
+      <div class="col-2">
+        <h5>Section</h5>
+        <ul class="nav flex-column">
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Home</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Features</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Pricing</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">FAQs</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">About</a></li>
+        </ul>
+      </div>
+
+      <div class="col-2">
+        <h5>Section</h5>
+        <ul class="nav flex-column">
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Home</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Features</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Pricing</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">FAQs</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">About</a></li>
+        </ul>
+      </div>
+
+      <div class="col-2">
+        <h5>Section</h5>
+        <ul class="nav flex-column">
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Home</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Features</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Pricing</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">FAQs</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">About</a></li>
+        </ul>
+      </div>
+
+      <div class="col-2">
+        <h5>Section</h5>
+        <ul class="nav flex-column">
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Home</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Features</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Pricing</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">FAQs</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">About</a></li>
+        </ul>
+      </div>
+
+      <div class="col-2">
+        <h5>Section</h5>
+        <ul class="nav flex-column">
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Home</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Features</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Pricing</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">FAQs</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">About</a></li>
+        </ul>
+      </div>
+      <div class="col-2">
+        <h5>Section</h5>
+        <ul class="nav flex-column">
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Home</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Features</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Pricing</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">FAQs</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">About</a></li>
+        </ul>
+      </div>
+    </div>
+
+    
+  </footer>
+</div>
+</section>
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+  
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    -->
+  </body>
+</html>
